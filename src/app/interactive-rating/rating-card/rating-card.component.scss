@@ -8,8 +8,9 @@
 
   .card-container {
     display: grid;
-    grid-template-rows: 50px 45px 75px 55px 45px;
+    grid-template-rows: 45px 45px 75px 50px 45px;
     padding: 32px;
+    margin-bottom: 140px;
     align-content: space-between;
 
     background-image: radial-gradient(rgba(35, 42, 52, 1)
@@ -32,12 +33,18 @@
     }
 
     .text-container {
-      width: 280px;
+      width: 340px;
+      margin-top: -22px;
+
+      p {
+        line-height: 25px;
+      }
     }
 
     .title-container {
       display: grid;
       align-content: center;
+      margin-top: 17px;
     }
 
     .rating-container {
