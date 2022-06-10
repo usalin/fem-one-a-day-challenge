@@ -2,7 +2,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
   place-content: center;
   background-color: #131518;
 
@@ -18,7 +17,6 @@
     height: 416px;
     width: 412px;
     border-radius: 30px;
-    border: 3px solid black;
 
     .icon-container {
       width: 48px;
@@ -135,7 +133,6 @@
       button {
         justify-self: center;
         min-width: 280px;
-        border: 3px solid red;
       }
     }
   }
