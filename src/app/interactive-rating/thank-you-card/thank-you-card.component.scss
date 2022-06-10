@@ -7,6 +7,7 @@
   background-color: #131518;
 
   .card-container {
+
     padding: 47px 40px 43px 32px;
     width: 412px;
     height: 416px;
@@ -17,7 +18,7 @@
     display: grid;
     align-content: space-between;
 
-    grid-template-rows: max-content 32px 43px 72px;
+    grid-template-rows: 100px 32px 43px 72px;
 
     .image-container {
       display: grid;
@@ -42,6 +43,42 @@
       line-height: 35px;
       letter-spacing: 1px;
       color: #FFFFFF;
+    }
+    @media only screen and (max-width: 500px) {
+      // grid-template-rows: 40px 37px 66px 42px 45px;
+      padding: 34px 24px 37px 24px;
+
+      height: 360px;
+      width: 327px;
+
+      .image-container {
+        justify-content: center;
+        img {
+          display: none;
+        }
+        &::before {
+          content: url("../../../assets/icons/online-payment-two.png");
+          width: 144px;
+          height: 96px;
+        }
+      }
+
+      .notification-container {
+        font-size: 14px;
+        // margin-top: 40px;
+      }
+
+      .title-container {
+        font-size: 24px;
+        line-height: 30px;
+        align-self: center;
+      }
+
+      .text-container {
+        p {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
