@@ -3,18 +3,10 @@
 $mobile-width: 375px;
 $desktop-width: 1440px;
 
-// COLOURS 
-$c-dark-mode-elements: hsl(209, 23%, 22%);
-$c-dark-mode-background: hsl(207, 26%, 17%);
-$c-dark-mode-text: hsl(0, 0%, 100%);
- 
-$c-light-mode-text: hsl(200, 15%, 8%);
-$c-light-mode-input: hsl(0, 0%, 52%);
-$c-light-mode-background: hsl(0, 0%, 98%);
-$c-light-mode-elements: hsl(0, 0%, 100%);
+// COLOURS
 
-// TYPOGRAPHY
+$c-white: hsl(0, 0%, 98%);
+$c-gray: hsl(0, 0%, 41%);
+$c-black : hsl(0, 0%, 8%);
 
-$s-homepage-items: 14px;
-$s-detail-items: 16px;
-$font-family: 'Nunito Sans', sans-serif;
+$font-family: 'Epilogue';
