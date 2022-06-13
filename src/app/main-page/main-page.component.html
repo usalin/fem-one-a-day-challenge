@@ -87,7 +87,7 @@
 
 </div> -->
 
-<mat-toolbar color="primary" class="example-toolbar">
+<!-- <mat-toolbar color="primary" class="example-toolbar">
 	<button mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
 	<h1 class="example-app-name">Nested Menus</h1>
 </mat-toolbar>
@@ -120,5 +120,100 @@
 		Main content that resizes properly
 	</div>
 
-</mat-sidenav-container>
+</mat-sidenav-container> -->
 
+
+<nav>
+  <a href="/" class="brand">
+    <img src="/images/logo.svg" alt="Logo">
+  </a>
+  <a (click)="openModal()" href="#" class="ham">
+    <img src="assets/icon-menu.svg" alt="Open Menu">
+  </a>
+
+  <div class="nav-ul">
+    <div class="dropdown">
+      <a class="dropbtn">
+        Features <img src="assets/icon-arrow-up.svg" alt="Arrow Up">
+      </a>
+      <div class="dropdown-content">
+        <a href="#"><img src="assets/icon-todo.svg" alt="" /> TodoList </a>
+        <a href="#"><img src="assets/icon-calendar.svg" alt="" /> Calender </a>
+        <a href="#"><img src="assets/icon-reminders.svg" alt="" /> reminders </a>
+        <a href="#"><img src="assets/icon-planning.svg" alt="" /> Planing </a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a class="dropbtn">
+        Company <img src="assets/icon-arrow-up.svg" alt="Arrow Up">
+      </a>
+      <div class="dropdown-content">
+        <a href="#">History</a>
+        <a href="#">Our Team</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+    <a href="#">Careers</a>
+    <a href="#">About</a>
+  </div>
+
+
+  <div class="nav-btns">
+    <button>Login</button>
+    <button>Register</button>
+  </div>
+
+</nav>
+
+<div class="overlay">
+  <div class="mobile-nav">
+    <img (click)="closeModal()" src="assets/icon-close-menu.svg" id="close-Menu">
+    <div class="mobile-nav-con">
+      <div class="dropdown">
+        <div class="dropbtn">
+          Features <img src="assets/icon-arrow-up.svg" alt="Arrow Up">
+        </div>
+        <div class="dropdown-content">
+          <a href="#"><img src="assets/icon-todo.svg" alt="" /> TodoList </a>
+          <a href="#"><img src="assets/icon-calendar.svg" alt="" /> Calender </a>
+          <a href="#"><img src="assets/icon-reminders.svg" alt="" /> reminders </a>
+          <a href="#"><img src="assets/icon-planning.svg" alt="" /> Planing </a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn">
+          Company <img src="assets/icon-arrow-up.svg" alt="Arrow Up">
+        </div>
+        <div class="dropdown-content">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+    <a href="#">Careers</a>
+    <a href="#">About</a>
+    </div>
+
+  </div>
+</div>
+<div class="hero">
+  <div class="hero-text">
+    <h1>Make <br /> remote work</h1>
+    <p>
+
+  Get your team in sync, no matter your location. Streamline processes,
+  create team rituals, and watch productivity soar.
+    </p>
+    <button>Learn More</button>
+    <div class="logos">
+      <img src="assets/client-audiophile.svg" alt="">
+      <img src="assets/client-databiz.svg" alt="">
+      <img src="assets/client-maker.svg" alt="">
+      <img src="assets/client-meet.svg" alt="">
+    </div>
+  </div>
+  <div class="img-container">
+    <img src="assets/image-hero-desktop.png" id="hero-img">
+  </div>
+</div>

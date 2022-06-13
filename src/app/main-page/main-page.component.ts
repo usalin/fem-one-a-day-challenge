@@ -14,15 +14,33 @@ export class MainPageComponent {
   isShowing = false;
   showSubSubMenu: boolean = false;
 
-  mouseenter() {
-    if (!this.isExpanded) {
-      this.isShowing = true;
+  // mouseenter() {
+  //   if (!this.isExpanded) {
+  //     this.isShowing = true;
+  //   }
+  // }
+
+  // mouseleave() {
+  //   if (!this.isExpanded) {
+  //     this.isShowing = false;
+  //   }
+  // }
+  openModal() {
+    document.querySelector('.mobile-nav')!.classList.add('show');
+    const overlay = document.querySelector('.overlay') as HTMLElement;
+    if (overlay) {
+      overlay!.style.display = 'block';
     }
+
+    document.querySelector('body')!.classList.add('lock');
   }
 
-  mouseleave() {
-    if (!this.isExpanded) {
-      this.isShowing = false;
+  closeModal() {
+    document.querySelector('.mobile-nav')!.classList.remove('show');
+    const modal = document.querySelector('.overlay') as HTMLElement;
+    if (modal) {
+      modal.style.display = 'none'
     }
+    document.querySelector('body')!.classList.remove('lock');
   }
 }
